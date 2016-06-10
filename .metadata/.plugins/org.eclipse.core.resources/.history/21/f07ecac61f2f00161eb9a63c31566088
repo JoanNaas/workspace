@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package cl.curso.java.builder_app;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class BuilderAutoToyota implements BuilderAuto {
+
+	/* (non-Javadoc)
+	 * @see cl.curso.java.builder_app.BuilderAuto#construir()
+	 */
+	public Auto construir() {
+		// TODO Auto-generated method stub
+		GPS gps = new GPS("win", "2.0");
+		Motor motor = new Motor(100);
+		
+		
+		Auto auto = new Auto("Toyota", "Corolla", 4, gps, motor)
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package cl.curso.java.builder_app;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class BuilderAutoToyota implements BuilderAuto {
+
+	/* (non-Javadoc)
+	 * @see cl.curso.java.builder_app.BuilderAuto#construir()
+	 */
+	public Auto construir() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

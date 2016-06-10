@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package cl.curso.java.builder_app;
+
+import java.util.List;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class Auto {
+	
+	private String marca;
+	private String modelo;
+	private List<Rueda> ruedas;
+	private GPS gps;
+	private Motor motor;
+
+}
