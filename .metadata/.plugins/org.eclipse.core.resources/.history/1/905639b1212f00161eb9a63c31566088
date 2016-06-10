@@ -34,10 +34,10 @@ public class Director {
 	}
 	
 	
-	public Auto construirAuto()
+	public Auto ConstruirAuto()
 	{
 		
-		return  builder.construir();
+		return null;
 	}
 
 }

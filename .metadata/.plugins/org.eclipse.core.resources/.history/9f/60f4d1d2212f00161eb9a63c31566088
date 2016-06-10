@@ -36,8 +36,15 @@ public class Director {
 	
 	public Auto construirAuto()
 	{
-		
-		return  builder.construir();
+		BuilderAuto auto = new BuilderAuto() {
+			
+			public Auto construir() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		};
+				
+		return auto;
 	}
 
 }
