@@ -1,0 +1,123 @@
+/**
+ * 
+ */
+package ejercicioCanciones;
+
+import java.util.ArrayList;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+
+
+/**
+ * @author José Navarro
+ *
+ */
+public class PlayList {
+
+	private String nombre;
+	private ArrayList<Cancion> canciones;
+	private ArrayList<Usuario> seguidores;
+	/**
+	 * @param nombre
+	 * @param canciones
+	 * @param seguidores
+	 */
+	public PlayList(String nombre, ArrayList<Cancion> canciones, ArrayList<Usuario> seguidores) {
+		super();
+		this.nombre = nombre;
+		this.canciones = canciones;
+		this.seguidores = seguidores;
+	}
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+	/**
+	 * @param nombre the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	/**
+	 * @return the canciones
+	 */
+	public ArrayList<Cancion> getCanciones() {
+		return canciones;
+	}
+	/**
+	 * @param canciones the canciones to set
+	 */
+	public void setCanciones(ArrayList<Cancion> canciones) {
+		this.canciones = canciones;
+	}
+	/**
+	 * @return the seguidores
+	 */
+	public ArrayList<Usuario> getSeguidores() {
+		return seguidores;
+	}
+	/**
+	 * @param seguidores the seguidores to set
+	 */
+	public void setSeguidores(ArrayList<Usuario> seguidores) {
+		this.seguidores = seguidores;
+	}
+	
+	
+	public void agregarCancion(Cancion cancion)
+	{
+		
+		if (!(this.canciones.contains(cancion))) 
+		{
+			this.canciones.add(cancion);
+		}
+		else
+		{
+			System.out.println("Esta cancion ya existe no se puede agregar");
+		}
+		
+	}
+	
+	public void eliminarCancion(Cancion cancion)
+	{
+		if ((this.canciones.contains(cancion))) {
+			this.canciones.remove(cancion);
+		}
+		else
+		{
+			System.out.println("La cancion no existe en el PlayList");
+		}
+	}
+	
+	public double duracionMinutos()
+	{
+		double total = 0;
+		for (Iterator<Cancion> iterator = canciones.iterator(); iterator.hasNext();) {
+			total = total + iterator.next().getDuracionMinutos();
+		}
+		return total;
+	}
+	
+	public void ordenarCanciones()
+	{
+		Collections.sort(this.getCanciones(), new Comparator<Cancion>() {
+
+			@Override
+			public int compare(Cancion arg0, Cancion arg1) {
+				// TODO Auto-generated method stub
+				return new Double(arg0.getDuracionMinutos()).compareTo(new Double(arg1.getDuracionMinutos()));
+			}
+		});
+	}
+	
+	public void ordenarAleatorio()
+	{
+		Collections.shuffle(canciones);
+	}
+	
+	
+}

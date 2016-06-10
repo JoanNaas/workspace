@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package login;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class UsuarioDAO {
+
+}

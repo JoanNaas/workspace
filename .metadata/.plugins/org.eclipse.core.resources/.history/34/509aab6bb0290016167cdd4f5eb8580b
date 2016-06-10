@@ -1,0 +1,55 @@
+/**
+ * 
+ */
+package sql;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+
+/**
+ * @author José Navarro
+ *
+ */
+public class Programa {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection conexion = DriverManager.getConnection("jdbc:mysql://192.168.0.108:3306/curso", "alumnos", "java123");
+			Statement s = conexion.createStatement();
+			ResultSet rs = s.executeQuery("select * from alumnos");
+			
+			Statement s1 = conexion.createStatement();
+			
+			int resultado = s1.executeUpdate("INSERT INTO curso.alumnos (idalumno, nombre, apellido)" + "VALUES ('3', 'juan' , 'maldonado');");
+			System.out.println(resultado);
+			
+			while (rs.next()) {
+				System.out.println(rs.getInt(1));
+				System.out.println(rs.getString("nombre"));
+				System.out.println(rs.getString(3));
+			}
+			
+		} catch (ClassNotFoundException e) {
+			// TODO: handle exception
+			System.out.println("El driver requerido no estacargado");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("error");
+		}
+
+	}
+
+}

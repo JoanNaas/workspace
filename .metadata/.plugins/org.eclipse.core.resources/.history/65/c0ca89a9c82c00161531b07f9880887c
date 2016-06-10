@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package login;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class Conexion {
+	
+	private static Conexion conexion;
+	
+	/**
+	 * 
+	 */
+	private Conexion() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

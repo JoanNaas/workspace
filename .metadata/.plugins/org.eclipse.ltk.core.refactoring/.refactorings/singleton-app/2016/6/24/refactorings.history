@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;cl.curso.java.singleton_app.Motor.motor&apos; in &apos;cl.curso.java.singleton_app.Motor&apos;&#x0D;&#x0A;- Original project: &apos;singleton-app&apos;&#x0D;&#x0A;- Original element: &apos;cl.curso.java.singleton_app.Motor.motor&apos;&#x0D;&#x0A;- Getter method name: &apos;getMotor&apos;&#x0D;&#x0A;- Setter method name: &apos;setMotor&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type&#x0D;&#x0A;- Generate method comments" comments="true" declaring="true" description="Encapsulate field &apos;motor&apos;" flags="589830" getter="getMotor" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java&lt;cl.curso.java.singleton_app{Motor.java[Motor^motor" insertion="1" setter="setMotor" stamp="1465481798389" version="1.0" visibility="1"/>
+</session>

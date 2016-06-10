@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package cl.curso.java.singleton_app;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class Motor {
+	
+	private Motor motor;
+
+	/**
+	 * @param motor
+	 */
+	private Motor(Motor motor) {
+		super();
+		this.motor = motor;
+	}
+	
+	
+	public Motor getInstance()
+	{
+		
+		return motor;
+		
+	}
+	
+
+}

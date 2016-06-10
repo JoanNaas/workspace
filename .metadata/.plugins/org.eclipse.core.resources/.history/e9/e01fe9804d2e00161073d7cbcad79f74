@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package cl.curso.java.singleton_app;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class Motor {
+	
+	private static Motor motor;
+
+	
+	/**
+	 * @param motor2
+	 */
+	private Motor() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public static Motor getInstance()
+	{
+		if (motor == null) {
+			
+			Motor motor = new Motor(motor2);
+			return motor;
+			
+		}
+		return null;
+		
+	}
+
+
+
+
+}

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package cl.curso.java.AbstractFactory;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class MsWindowsWidgetFactory {
+
+}

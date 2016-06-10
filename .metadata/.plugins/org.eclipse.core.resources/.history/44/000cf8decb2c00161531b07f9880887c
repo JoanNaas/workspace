@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package login;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class ConexionException extends RuntimeException {
+	
+	
+
+}

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package cl.curso.java.control_cinco.jnavarro;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class ProgramaEmpleados {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

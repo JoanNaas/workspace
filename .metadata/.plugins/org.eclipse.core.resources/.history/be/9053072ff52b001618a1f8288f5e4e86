@@ -1,0 +1,84 @@
+/**
+ * 
+ */
+package cl.curso.java.control_cinco.jnavarro;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class Empresa {
+	
+	private String nombre;
+	private List<Empleado> empleados;
+	
+	/**
+	 * 
+	 */
+	public Empresa() {
+		// TODO Auto-generated constructor stub
+		this.nombre = "accenture";
+		this.empleados = new ArrayList<>(); 
+	}
+	
+	
+	
+	/**
+	 * @param nombre
+	 * @param empleados
+	 */
+	public Empresa(String nombre, List<Empleado> empleados) {
+		super();
+		this.nombre = nombre;
+		this.empleados = empleados;
+	}
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+	/**
+	 * @param nombre the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	/**
+	 * @return the empleados
+	 */
+	public List<Empleado> getEmpleados() {
+		return empleados;
+	}
+	/**
+	 * @param empleados the empleados to set
+	 */
+	public void setEmpleados(List<Empleado> empleados) {
+		this.empleados = empleados;
+	}
+	
+	public void ordenarEmpleadosPorNombre()
+	{
+		
+	}
+	
+	public void ordenarEmpleadosPorDepartamento()
+	{
+		
+	}
+	
+	public Empleado buscarEmpleado( String rut )
+	{
+		
+		return null;
+	}
+	
+	public void imprimir()
+	{
+		
+	}
+
+}

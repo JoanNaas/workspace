@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+package login;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class Conexion {
+	
+	private static Conexion conexion;
+	
+	/**
+	 * 
+	 */
+	private Conexion() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static Conexion getInstancia()
+	{
+		if (conexion == null) {
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection conexion = DriverManager.getConnection("jdbc:mysql://192.168.0.108:3306/curso", "alumnos", "java123");
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			return null;
+		}
+		else
+		{
+			return conexion;
+		}
+		
+	}
+
+	
+	
+}

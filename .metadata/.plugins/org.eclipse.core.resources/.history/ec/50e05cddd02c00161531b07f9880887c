@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package login;
+
+/**
+ * @author José Navarro
+ *
+ */
+public class UsuarioDAO {
+
+	public static void validar( Usuario usuario)
+	{
+		
+	}
+	
+}
